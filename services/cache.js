@@ -7,6 +7,12 @@ mongoose.Query.prototype.exec = function () {
 
     console.log(this.getQuery());
     console.log(this.mongooseCollection.name);
+    //Safely copy properties from one object to another.
+    const key = Object.assign({}, this.getQuery(), {
+        collection: this.mongooseCollection.name
+    });
+
+    console.log(key);
 
     return exec.apply(this, arguments);
 }
