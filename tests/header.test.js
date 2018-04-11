@@ -2,12 +2,16 @@ const puppeteer = require('puppeteer');
 
 let browser, page;
 
-beforeEach( async () => {
+beforeEach(async () => {
     browser = await puppeteer.launch({
       headless: false
     });
     page = await browser.newPage();
     await  page.goto('localhost:3000');
+});
+
+afterEach(async () => {
+    await browser.close();
 });
 
 test('Adds two numbers', () => {
@@ -17,8 +21,16 @@ test('Adds two numbers', () => {
 
 });
 
-test('We can launch a browser', async () => {
+test('The header has the correct test', async () => {
     const text = await page.$eval('a.brand-logo', el => el.innerHTML);
 
     expect(text).toEqual('Blogster');
+});
+
+test('Clicking login starts oauth flow', async () => {
+    await page.click('.right a');
+
+    const url = await page.url();
+
+    console.log(url);
 });
