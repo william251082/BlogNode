@@ -11,7 +11,7 @@ beforeEach(async () => {
 });
 
 afterEach(async () => {
-    await browser.close();
+    // await browser.close();
 });
 
 test('Adds two numbers', () => {
@@ -35,7 +35,7 @@ test('Clicking login starts oauth flow', async () => {
     expect(url).toMatch(/accounts\.google\.com/);
 });
 
-test('When signed in, shows logout button', async () => {
+test.only('When signed in, shows logout button', async () => {
     const id = '5acc9d2efd7888634168aed5';
 
     const Buffer = require('safe-buffer').Buffer;
@@ -53,5 +53,7 @@ test('When signed in, shows logout button', async () => {
     const keygrip = new Keygrip([keys.cookieKey]);
     const sig = keygrip.sign('session=' + sessionString);
 
-    console.log(sessionString, sig);
-    });
+    await page.setCookie({ name: 'session', value: sessionString });
+    await page.setCookie({ name: 'session.sig', value: sig});
+    await page.goto('localhost:3000');
+});
