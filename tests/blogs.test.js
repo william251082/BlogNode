@@ -24,6 +24,24 @@ test('Can see blog create form', async () => {
 
     });
 
+    describe('And using valid inputs', async () => {
+        beforeEach(async () => {
+            await page.type('.title input', 'My Title');
+            await page.click('.content input', 'My Content');
+            await page.click('form button');
+        });
+
+        test('submitting takes reviewer screen', async () => {
+            const text = await page.getContentsOf('h5');
+
+            expect(text).toEqual('Please confirm your entries');
+        });
+
+        test('submitting then saving adds blog to index page', async () => {
+
+        });
+    });
+
     describe('And using invalid inputs', async () => {
         beforeEach(async () => {
             await page.click('form button');
