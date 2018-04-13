@@ -19,7 +19,7 @@ test('Adds two numbers', () => {
 });
 
 test('The header has the correct test', async () => {
-    const text = await page.$eval('a.brand-logo', el => el.innerHTML);
+    const text = await page.getContentsOf('a.brand-logo');
 
     expect(text).toEqual('Blogster');
 });
