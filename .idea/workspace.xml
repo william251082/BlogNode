@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f16684a-7caa-4bb2-9f4f-60691bfee7ff" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/temp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/blogs.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/blogs.test.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blogs.test.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blogs.test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/blogs.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="85" column="3" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
+            <state relative-caret-position="406">
+              <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -31,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="temp.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="temp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" selection-start-line="13" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="294">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -67,8 +68,8 @@
         <option value="$PROJECT_DIR$/tests/header.test.js" />
         <option value="$PROJECT_DIR$/tests/helpers/page.js" />
         <option value="$PROJECT_DIR$/tests/setup.js" />
-        <option value="$PROJECT_DIR$/tests/blogs.test.js" />
         <option value="$PROJECT_DIR$/temp.js" />
+        <option value="$PROJECT_DIR$/tests/blogs.test.js" />
       </list>
     </option>
   </component>
@@ -169,11 +170,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42856000" />
+    <option name="totallyTimeSpent" value="43327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
@@ -559,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/blogs.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="85" column="3" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/blogRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -575,8 +568,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" selection-start-line="13" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="294">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/blogs.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
         </state>
       </provider>
     </entry>
