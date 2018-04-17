@@ -67,11 +67,11 @@ test('Can see blog create form', async () => {
 describe('User is not logged in', async () => {
     const actions = [
         {
-            methos:'get',
+            method:'get',
             path: '/api/blogs'
         },
         {
-            methos:'post',
+            method:'post',
             path: '/api/blogs',
             data: {
                 title: 'T',
@@ -79,18 +79,12 @@ describe('User is not logged in', async () => {
             }
         }
     ];
-    test('User cannot create blog post', async () => {
-        const result = await page.post('/api/blogs', { title: 'T', content: 'C' })
 
-        // console.log(result);
-        expect(result).toEqual({ error: 'You must log in!' });
+    test('Blog related actions are prohibited', async () => {
+        const results = await page.execRequests(actions);
+
+        for (let result of results) {
+            expect(result).toEqual({ error: 'You must log in!' });
+        }
     });
-
-
-    test('User cannot get a list of post', async () => {
-        const result = await page.get('/api/blogs');
-        // console.log(result);
-        expect(result).toEqual({ error: 'You must log in!' });
-
-        });
-    });
+});
