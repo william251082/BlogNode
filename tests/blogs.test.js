@@ -27,7 +27,7 @@ test('Can see blog create form', async () => {
     describe('And using valid inputs', async () => {
         beforeEach(async () => {
             await page.type('.title input', 'My Title');
-            await page.click('.content input', 'My Content');
+            await page.type('.content input', 'My Content');
             await page.click('form button');
         });
 
