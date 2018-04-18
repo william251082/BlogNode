@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f16684a-7caa-4bb2-9f4f-60691bfee7ff" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/blogs.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/blogs.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/header.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/header.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/helpers/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/helpers/page.js" afterDir="false" />
-    </list>
+    <list default="true" id="5f16684a-7caa-4bb2-9f4f-60691bfee7ff" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,12 +211,12 @@
       <workItem from="1523425141477" duration="2783000" />
       <workItem from="1523596917228" duration="6395000" />
       <workItem from="1523995405518" duration="5735000" />
-      <workItem from="1524028736426" duration="2846000" />
+      <workItem from="1524028736426" duration="2964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52056000" />
+    <option name="totallyTimeSpent" value="52174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
